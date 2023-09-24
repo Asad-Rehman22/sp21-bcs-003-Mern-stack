@@ -1,0 +1,145 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+font-size: 50px;
+line-height: 64px;
+color:#222;
+}
+h2{
+  font-size: 46px;
+line-height: 54px;
+color:#222;
+
+}
+
+h4{
+  font-size: 20px;
+color:#222;
+
+}
+h6{
+  font-weight: 700;
+  font-size: 12px;
+}
+p{
+  font-size: 16px;
+  color:#465b56;
+  margin: 15px 0 10px 0;
+
+}
+.div-p1{
+  padding: 40px 80px;
+}
+.div-m1{
+  margin: 40px 0;
+}
+#nav-bar{
+  background-color:gainsboro;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+  padding:20px;
+  color:black;
+  position: sticky;
+  top:0;
+  left: 0;
+  z-index: 999;
+
+}
+#nav-bar h3{
+  color:rgb(8, 157, 157);
+}
+#right{
+  text-align: right;
+  color:black;
+  
+}
+ ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin: 40px;
+  color:rgb(8, 157, 157);
+
+}
+#menue li a:hover,
+#menue li a.active{
+  color: black;
+  text-decoration: none;
+}
+#menue li a.active::after,
+#menue li a:hover::after
+
+{
+  content: "";
+  width: 40%;
+  height:2px;
+  background: black;
+  position: absolute;
+  bottom: -4px;
+  left:20px; 
+}
+
+span{
+  margin:0 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#left img
+{
+  height: 70px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 100px;
+  margin: 30px;
+  justify-content: space-between ;
+}
+#logo{
+  font-size: 30px;
+}
+@media only screen and (max-width:600px) {
+     span{
+      display: block;
+     }
+    ul li{
+      display: block;
+    }
+    ul{
+      display: none;
+    }
+}
+#front{
+  background-image: url("./images/hero4.png");
+  height:90vh;
+  width :100%;
+  background-size: cover;
+  background-position: top 20% left 0;
+  background-repeat: no-repeat;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#front h4{
+  padding-bottom: 15px;
+}
+#front h1{
+  color:rgb(8, 157, 157)
+}
+#front button{
+  background-image: url("./images/button.png");
+
+  background-color: transparent;
+  color:rgb(8, 157, 157);
+  border:0;
+  background-repeat: no-repeat;
+  padding:14px 80px 14px 64px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
