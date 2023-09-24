@@ -56,7 +56,7 @@ p{
   color:black;
   
 }
- ul li{
+ ul li{ 
   position: relative;
   list-style: none;
   display: inline-block;
