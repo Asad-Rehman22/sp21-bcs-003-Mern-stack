@@ -1,0 +1,91 @@
+
+.div-p1{
+  padding: 40px 80px;
+}
+.div-m1{
+  margin: 40px 0;
+}
+#nav-bar{
+  background-color:rgb(35, 183, 35);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+  padding:5px;
+  color:black;
+  position: sticky;
+  top:0;
+  left: 0;
+  z-index: 999;
+
+}
+
+#right{
+  text-align: right;
+  color:white;
+  
+}
+ ul li{ 
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin: 30px;
+  color:white;
+
+}
+#menue li a:hover,
+#menue li a.active{
+  color: black;
+  text-decoration: none;
+}
+#menue li a.active::after,
+#menue li a:hover::after
+
+{
+  content: "";
+  width: 40%;
+  height:2px;
+  background: black;
+  position: absolute;
+  bottom: -4px;
+  left:20px; 
+}
+
+span{
+  margin:0 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#left img
+{
+  height: 70px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 100px;
+  margin: 30px;
+  justify-content: space-between ;
+}
+
+#logo{
+  font-size: 30px;
+}
+#arif{
+    box-sizing: border-box;
+    vertical-align: "middle";
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    padding-left: 30px;
+    padding-top: 20px;
+
+}
+
+@media only screen and (max-width:600px) {
+     span{
+      display: block;
+     }
+    ul li{
+      display: block;
+    }
+    ul{
+      display: none;
+    }
+}
