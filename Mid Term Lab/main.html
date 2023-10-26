@@ -16,7 +16,7 @@
         <div id="left">
          
          <a href="main.html">
-            <img src="images\logo.svg" alt="Image description">
+            <img id ="logo-hide"src="images\logo.svg" alt="Image description">
         </a>
         
         </div>
@@ -73,9 +73,10 @@
         </div>
 
       </div>
+     
       <script>
         function myfunction() {
-          var x = document.getElementById("menue")
+          var x = document.getElementById("logo-hide")
           if (x.style.display == "block") {
             x.style.display = "none"
           }
