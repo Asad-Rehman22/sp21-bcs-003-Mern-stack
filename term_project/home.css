@@ -470,4 +470,96 @@ footer {
   transition: 0.2s ease;
   color:aquamarine
 }
+#page-header{
+  background-image: url("./images/b1.jpg");
+  width:100%;
+  height: 40vh;
+  background-position: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 14px;
+}
+#page-header h2 ,
+#page-header p
+{
+  color:white
+}
+#pagination{
+  text-align: center;
+}
+#pagination a{
+  text-decoration: none;
+  padding:15px 20px;
+  background-color: #089d9d;
+  border-radius: 4px;
+  color:white;
+  font-weight: 600;
+
+}
+#pagination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+.single-pro-image {
+  width: 50%; 
+  margin-right: 20px; 
+}
+
+.small-img-group {
+  display: flex;
+}
+
+.small-img-col {
+  flex: 1; 
+  cursor: pointer;
+  margin-right: 10px; 
+}
+
+.single-pro-details {
+  width: 50%; 
+  padding-top: 30px;
+  box-sizing: border-box; 
+  justify-content: space-between;
+}
+
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+
+#prodetails .single-pro-details select,
+#prodetails .single-pro-details input {
+  width: 100%; 
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details button {
+  background-color: #089d9d;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#prodetails .single-pro-details p {
+  margin-bottom: 20px; 
+}
+
+
 
