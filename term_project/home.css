@@ -562,4 +562,31 @@ footer {
 }
 
 
+header {
+  background-color: #089d9d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #089d9d;
+}
+
+p {
+  line-height: 1.6;
+}
+
+
+
 
