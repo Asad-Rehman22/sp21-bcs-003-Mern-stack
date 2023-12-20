@@ -37,6 +37,18 @@ p{
 .section-m1{
   margin: 40px 0;
 }
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  cursor:pointer;
+  border:none;
+  outline: none;
+  transition: 0.2s;
+}
 #nav-bar {
   background-color: gainsboro;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
@@ -239,4 +251,91 @@ span{
   justify-content: space-between;
   padding-top: 20px;
   flex-wrap: wrap;
+}
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("./images/b2.jpg");
+  width:100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center ;
+}
+#banner h4{
+  color: white;
+  font-size: 16px;
+}
+#banner h2{
+  color: white;
+  font-size: 30px;
+  padding: 10px 0;
+}
+#banner  button:hover{
+  background-color: #089d9d;
+  color: azure;
+}
+#sm-banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("./images/b16.jpg");
+  width: 100%;
+  min-width:580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center ;
+}
+#newsletter {
+  background-image: url('./images/bk.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Text color */
+  padding: 50px; /* Adjust padding as needed */
+  text-align: center; /* Align text in the center */
+}
+
+#newsletter .newtext {
+  display: inline-block;
+  color: #cce7d0;
+}
+#newsletter p {
+  color: aliceblue;
+}
+
+#newsletter h4 {
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+#newsletter .form {
+  display: flex;
+  align-items: center;
+}
+
+#newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px; /* Adjust width as needed */
+}
+
+#newsletter button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00cadc; /* Green background color, you can change it */
+  color: white;
+  cursor: pointer;
 }
