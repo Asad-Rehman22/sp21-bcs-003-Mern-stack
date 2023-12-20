@@ -50,10 +50,10 @@ button.normal{
   transition: 0.2s;
 }
 #nav-bar {
-  background-color: gainsboro;
+  background-color: lightgray;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
   padding: 20px;
-  color: black;
+  color: gray; /* Changed to gray */
   position: sticky;
   top: 0;
   left: 0;
@@ -61,60 +61,92 @@ button.normal{
 }
 
 #nav-bar h3 {
-  position: relative;
-  color: rgb(8, 157, 157);
+  margin: 0;
+  font-size: 24px;
+  color: #089d9d;
 }
 
 #right {
   text-align: right;
-  color: black;
+  color: gray; /* Changed to gray */
+}
+
+#menue {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #menue li {
-  position: relative;
   display: inline-block;
-  margin: 40px;
-  color: #089d9d;
+  margin: 0 20px;
+}
+
+#menue li a {
+  color: gray; /* Changed to gray */
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
 }
 
 #menue li a:hover,
 #menue li a.active {
   color: #089d9d;
-  text-decoration: none;
 }
 
 #menue li a.active::after,
 #menue li a:hover::after {
   content: "";
-  width: 40%;
+  width: 100%;
   height: 2px;
   background: #089d9d;
   position: absolute;
-  bottom: -4px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
 
-
-
-span{
-  margin:0 20px;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
+#menue li a.active:hover::after,
+#menue li a:hover::after {
+  transform: scaleX(1);
 }
 
-#left img
-{
+span {
+  display: none; /* Hide the menu icon */
+}
+
+#left img {
   height: 70px;
-  float: left;
-  margin-right: 20px;
-  border-radius: 100px;
-  margin: 30px;
-  justify-content: space-between ;
+  border-radius: 50%;
 }
-#logo{
-  font-size: 30px;
+
+#logo {
+  font-size: 24px;
 }
+
+#logo img {
+  height: 40px;
+}
+
+#menue li a#logo {
+  padding: 0;
+}
+
+#menue li a#logo img {
+  margin-top: -10px;
+}
+
+#menue li a#cart-icon {
+  font-size: 40px; /* Increased size */
+  border: none; /* Removed border */
+  color: gray; /* Changed color to gray */
+}
+
+
+
+
+
 @media only screen and (max-width:600px) {
      span{
       display: block;
@@ -328,14 +360,114 @@ span{
   border: none;
   border-radius: 5px;
   margin-right: 10px;
-  width: 200px; /* Adjust width as needed */
+  width: 200px; 
 }
 
 #newsletter button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #00cadc; /* Green background color, you can change it */
+  background-color: #00cadc;
   color: white;
   cursor: pointer;
 }
+#logo {
+  width: 75px;
+  height: auto; 
+  border: 1px solid #131212; 
+  border-radius: 80px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+footer {
+  background-color: #080808;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+#logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+#logo {
+  width: 80px; 
+  height: auto; 
+  margin-bottom: 10px;
+  transition: background-color 0.3s; 
+}
+
+
+#logo-container:hover {
+  background-color: white;
+}
+
+
+#logo-container:hover #logo {
+  background-color: #089d9d;
+}
+
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.footer-column {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.footer-column p:hover{
+  background-color: #089d9d;
+  transition: 0.2s ease;
+  color:aquamarine
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.footer-links a:hover{
+  background-color: #089d9d;
+  transition: 0.2s ease;
+  color:aquamarine
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.social-icons a:hover{
+  background-color: #089d9d;
+  transition: 0.2s ease;
+  color:aquamarine
+}
+
