@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 // Create an instance of the Express application
 const app = express();
 
-const mongoURI = 'mongodb://localhost:27017/nhb';
+const mongoURI = 'mongodb://localhost::27017/nhb';
 
 mongoose.connect(mongoURI)
   .then(() => {
