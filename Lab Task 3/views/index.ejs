@@ -1,0 +1,42 @@
+<!-- views/users/index.ejs -->
+<h2>Users</h2>
+
+<!-- Filter Form -->
+<form action="/users" method="GET">
+  <input type="text" name="username" placeholder="Filter by Username">
+  <!-- Add more filter inputs as needed -->
+  <button type="submit">Filter</button>
+</form>
+
+<!-- Users Table -->
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <!-- Add more columns as needed -->
+    </tr>
+  </thead>
+  <tbody>
+    <% users.forEach(user => { %>
+      <tr>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <!-- Display other user details as needed -->
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+<!-- Pagination Links -->
+<div>
+  <% if (page > 1) { %>
+    <a href="/users?page=<%= page - 1 %>">Previous</a>
+  <% } %>
+
+  Page <%= page %> of <%= totalPages %>
+
+  <% if (page < totalPages) { %>
+    <a href="/users?page=<%= page + 1 %>">Next</a>
+  <% } %>
+</div>

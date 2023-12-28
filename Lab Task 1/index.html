@@ -1,0 +1,68 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <!-- Add these script tags in the head section of your HTML file -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+</head>
+<body>
+  <h2>Registration</h2>
+  <form id="registrationForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <br>
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    $(document).ready(function() {
+      $('#registrationForm').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 5
+          },
+          password: {
+            required: true,
+            minlength: 8
+          },
+          confirmPassword: {
+            required: true,
+            equalTo: '#password'
+          }
+        },
+        messages: {
+          username: {
+            required: 'Please enter a username',
+            minlength: 'Username must be at least 5 characters long'
+          },
+          password: {
+            required: 'Please enter a password',
+            minlength: 'Password must be at least 8 characters long'
+          },
+          confirmPassword: {
+            required: 'Please confirm your password',
+            equalTo: 'Passwords do not match'
+          }
+        },
+        submitHandler: function(form) {
+          // Handle form submission (e.g., send data to server)
+          console.log('Form submitted');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
